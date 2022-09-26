@@ -13,7 +13,7 @@ pipeline {
       }
     }
 
-    stage('Build') {
+    stage('Build_1') {
       steps {
         sh 'docker build -t getting-started .'
       }
