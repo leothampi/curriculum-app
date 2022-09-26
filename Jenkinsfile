@@ -15,7 +15,7 @@ pipeline {
 
     stage('Build_1') {
       steps {
-        sh 'docker build -t getting-started .'
+        sh 'docker build github.com/creack/docker-firefox'
       }
     }
 
