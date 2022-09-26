@@ -1,8 +1,8 @@
 version: "3"
 services:
   app:
-    container_name: curriculum-front
-    image: index.docker.io/fuze365/curriculum-front:latest
+    container_name: ubuntu
+    image: https://github.com/docker-library/repo-info/tree/master/repos/ubuntu:latest
     env_file:
       - .env.front
     networks:
@@ -13,8 +13,8 @@ services:
     ports:
       - "8080:8080"
   api:
-    container_name: curriculum-back
-    image: index.docker.io/fuze365/curriculum-back:latest
+    container_name: ubuntu
+    image: https://github.com/docker-library/repo-info/tree/master/repos/ubuntu:latest
     env_file:
       - .env.back
       - .env.db
